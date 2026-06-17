@@ -108,7 +108,7 @@ tr.tot td{font-weight:700;background:var(--g50);color:var(--g800);border-top:1px
   </div>
 </div>
 
-<div class="banner">✓ Live Salesforce data · June 17, 2026 · 38 leads today · 12 opportunities</div>
+<div class="banner">✓ Live Salesforce data · June 17, 2026 · Sales Queue: 17 · PI Queue: 46 · 12 opportunities</div>
 
 <div class="main">
   <div class="slbl">Activity — IC Performance <span class="ptag" id="act-tag">Today</span></div>
@@ -121,9 +121,9 @@ tr.tot td{font-weight:700;background:var(--g50);color:var(--g800);border-top:1px
 
   <div class="slbl">Lead Disposition <span class="ptag" id="period-tag">Today</span></div>
   <div class="kg g4">
-    <div class="ke"><div class="keh"><div class="kl">Total Leads</div><div class="kv" id="k-total">38</div></div><button class="eb" data-t="exp-total">▼ See all leads</button><div class="ep" id="exp-total"><div id="list-total"></div></div></div>
-    <div class="ke"><div class="keh"><div class="kl">PI Processing Queue</div><div class="kv" id="k-pi">0</div></div><button class="eb" data-t="exp-pi">▼ See leads</button><div class="ep" id="exp-pi"><div id="list-pi"></div></div></div>
-    <div class="ke"><div class="keh"><div class="kl">Sales Queue</div><div class="kv" id="k-sales">0</div></div><button class="eb" data-t="exp-sales">▼ See leads</button><div class="ep" id="exp-sales"><div id="list-sales"></div></div></div>
+    <div class="ke"><div class="keh"><div class="kl">Total Leads</div><div class="kv" id="k-total">63</div></div><button class="eb" data-t="exp-total">▼ See all leads</button><div class="ep" id="exp-total"><div id="list-total"></div></div></div>
+    <div class="ke"><div class="keh"><div class="kl">PI Processing Queue</div><div class="kv" id="k-pi">46</div></div><button class="eb" data-t="exp-pi">▼ See leads</button><div class="ep" id="exp-pi"><div id="list-pi"></div></div></div>
+    <div class="ke"><div class="keh"><div class="kl">Sales Queue</div><div class="kv" id="k-sales">17</div></div><button class="eb" data-t="exp-sales">▼ See leads</button><div class="ep" id="exp-sales"><div id="list-sales"></div></div></div>
     <div class="ke"><div class="keh"><div class="kl">Offer Presented</div><div class="kv" id="k-offer">12</div><div class="ks g">Bonus eligible</div></div><button class="eb amb" data-t="exp-offer">▼ See leads</button><div class="ep" id="exp-offer"><div id="list-offer"></div></div></div>
   </div>
 
@@ -169,10 +169,10 @@ tr.tot td{font-weight:700;background:var(--g50);color:var(--g800);border-top:1px
   <div class="div"></div>
   <div class="slbl">Conversion Summary</div>
   <div class="kg g4">
-    <div class="kpi"><div class="kl">Total Leads (Today)</div><div class="kv" id="a-total">38</div></div>
+    <div class="kpi"><div class="kl">Total Leads (Today)</div><div class="kv" id="a-total">63</div></div>
     <div class="kpi"><div class="kl">Offers Presented</div><div class="kv" style="color:var(--green)">12</div></div>
     <div class="kpi"><div class="kl">In Signing</div><div class="kv" style="color:var(--blue)">0</div></div>
-    <div class="kpi"><div class="kl">Offer Rate</div><div class="kv" style="color:var(--blue)">31.6%</div></div>
+    <div class="kpi"><div class="kl">Offer Rate</div><div class="kv" style="color:var(--blue)">19.0%</div></div>
   </div>
   <div class="note"><strong>Fields not yet filled in Salesforce:</strong> Properties Driven and Letters Sent will show once ICs fill <strong>Driver_Status__c</strong> and <strong>Letters_Action_Type__c / Date_Mailed__c</strong> on each lead.</div>
 </div>
@@ -197,6 +197,9 @@ const OPPS=[{"Id":"006QO00000qflBVYAY","Name":"Test Mak","StageName":"Present Of
 const ACTIVITY={"today":{"calls":{"Zack Foster":9,"Adam Taha":0,"May Taha":0,"Trevor Awan":0,"Ethan Jones":0,"Paul":0},"texts":{"Zack Foster":12,"Adam Taha":0,"May Taha":0,"Trevor Awan":0,"Ethan Jones":0,"Paul":0},"callDetail":{"Zack Foster":[{"lead":"GOFF - 310 MADRONA AVE, WOODLAND, WA 98674","leadId":"00QQO00001JLs1x2AD","duration":31,"time":"12:03 PM"},{"lead":"GOFF - 310 MADRONA AVE, WOODLAND, WA 98674","leadId":"00QQO00001JLs1x2AD","duration":30,"time":"12:13 PM"},{"lead":"GOFF - 310 MADRONA AVE, WOODLAND, WA 98674","leadId":"00QQO00001JLs1x2AD","duration":0,"time":"12:09 PM"},{"lead":"GOFF - 310 MADRONA AVE, WOODLAND, WA 98674","leadId":"00QQO00001JLs1x2AD","duration":0,"time":"12:12 PM"},{"lead":"GOFF - 310 MADRONA AVE, WOODLAND, WA 98674","leadId":"00QQO00001JLs1x2AD","duration":0,"time":"12:02 PM"},{"lead":"GOFF - 310 MADRONA AVE, WOODLAND, WA 98674","leadId":"00QQO00001JLs1x2AD","duration":null,"time":"12:07 PM"},{"lead":"GOFF - 310 MADRONA AVE, WOODLAND, WA 98674","leadId":"00QQO00001JLs1x2AD","duration":null,"time":"12:11 PM"},{"lead":"GOFF - 310 MADRONA AVE, WOODLAND, WA 98674","leadId":"00QQO00001JLs1x2AD","duration":null,"time":"12:11 PM"},{"lead":"GOFF - 310 MADRONA AVE, WOODLAND, WA 98674","leadId":"00QQO00001JLs1x2AD","duration":null,"time":"12:07 PM"}]},"textDetail":{"Zack Foster":[{"lead":"No lead linked","leadId":null,"time":"Today"},{"lead":"No lead linked","leadId":null,"time":"Today"},{"lead":"No lead linked","leadId":null,"time":"Today"},{"lead":"No lead linked","leadId":null,"time":"Today"},{"lead":"No lead linked","leadId":null,"time":"Today"},{"lead":"No lead linked","leadId":null,"time":"Today"},{"lead":"No lead linked","leadId":null,"time":"Today"},{"lead":"No lead linked","leadId":null,"time":"Today"},{"lead":"No lead linked","leadId":null,"time":"Today"},{"lead":"No lead linked","leadId":null,"time":"Today"},{"lead":"No lead linked","leadId":null,"time":"Today"},{"lead":"No lead linked","leadId":null,"time":"Today"}]}},"week":{"calls":{"Zack Foster":9,"Adam Taha":6,"May Taha":0,"Trevor Awan":0,"Ethan Jones":0,"Paul":0},"texts":{"Zack Foster":12,"Adam Taha":7,"May Taha":0,"Trevor Awan":0,"Ethan Jones":0,"Paul":0},"callDetail":{},"textDetail":{}},"month":{"calls":{"Zack Foster":9,"Adam Taha":25,"May Taha":0,"Trevor Awan":0,"Ethan Jones":0,"Paul":0},"texts":{"Zack Foster":12,"Adam Taha":59,"May Taha":0,"Trevor Awan":0,"Ethan Jones":0,"Paul":0},"callDetail":{},"textDetail":{}},"custom":{"calls":{"Zack Foster":9,"Adam Taha":6,"May Taha":0,"Trevor Awan":0,"Ethan Jones":0,"Paul":0},"texts":{"Zack Foster":12,"Adam Taha":7,"May Taha":0,"Trevor Awan":0,"Ethan Jones":0,"Paul":0},"callDetail":{},"textDetail":{}}};
 
 let chart=null, period='today', customFrom=null, customTo=null;
+
+// Real current queue totals from Salesforce (all leads, not just today)
+const QUEUE_TOTALS = { 'PI Processing Queue': 46, 'Sales Queue': 17 };
 function $(i){return document.getElementById(i);}
 function set(i,v){const e=$(i);if(e)e.textContent=v;}
 function sfLink(id){return SF+'/lightning/r/'+id+'/view';}
@@ -262,7 +265,10 @@ function render(p,from,to){
   const pi=leads.filter(l=>l.Owner==='PI Processing Queue');
   const sales=leads.filter(l=>l.Owner==='Sales Queue');
   const isaL=leads.filter(l=>IC_ROSTER.some(ic=>ic.name===l.Owner));
-  set('k-total',leads.length);set('k-pi',pi.length);set('k-sales',sales.length);
+  set('k-total',leads.length);
+  // Always use real queue totals from Salesforce (not filtered by date)
+  set('k-pi', QUEUE_TOTALS['PI Processing Queue']);
+  set('k-sales', QUEUE_TOTALS['Sales Queue']);
   set('k-isa',isaL.length);
   fill('list-total',leads,'#185FA5');fill('list-pi',pi,'#1d4ed8');
   fill('list-sales',sales,'#15803d');fill('list-offer',OPPS,'#92400e');
